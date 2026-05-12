@@ -18,26 +18,10 @@ Modificar a coluna username da tabela Users para varchar(10)
 
 Modificar a coluna password da tabela Users para varchar(8)
 
-Inserir os dados abaixo:
-Users
-Id    Name     Username Password Email
-1     Maria    Rh_maria 123mudar maria@empresa.com
-2     Paulo    Ti_paulo 123@456 paulo@empresa.com
-3     Ana      Rh_ana 123mudar ana@empresa.com
-4     Clara    Ti_clara 123mudar clara@empresa.com
-5     Aparecido    Rh_apareci 55@!cido aparecido@empresa.com
+<img width="664" height="568" alt="image" src="https://github.com/user-attachments/assets/f4de0d86-632c-4b42-a7ed-de3534f58bd8" />
 
-Projects
-Id Name Description Date
-10001 Re-folha Refatoração das
-Folhas
-05/09/2014
-10002 Manutenção PC´s Manutenção PC´s 06/09/2014
-10003 Auditoria NULL 07/09/2014
-Users_has_projects
-Users_id Projects_id
-1 10001
-5 10001
-3 10003
-4 10002
-2 10002
+Considerar as situações:
+- O projeto de Manutenção atrasou, mudar a data para 12/09/2014
+- O username de aparecido (usar o nome como condição de mudança) está feio, mudar para Rh_cido
+- Mudar o password do username Rh_maria (usar o username como condição de mudança) para 888@*, mas a condição deve verificar se o password dela ainda é 123mudar
+- O user de id 2 não participa mais do projeto 10002, removê-lo da associativa
